@@ -1,0 +1,25 @@
+{
+    "name": "tigerwill90/test",
+    "description": "Branca bug test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvain",
+            "email": "sylvain.muller90@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.1",
+        "slim/slim" : "^3.9.0",
+        "tuupola/branca" : "^0.3.1"
+    },
+    "require-dev" : {
+        "php" : "^7.1",
+        "phpunit/phpunit" : "^6.4.4"
+    },
+    "autoload-dev" : {
+        "psr-4" : {
+            "Tigerwill90\\Tests\\" : "tests"
+        }
+    }
+}
