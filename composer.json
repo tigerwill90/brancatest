@@ -10,17 +10,16 @@
     ],
     "require": {
         "php" : "^7.1",
-        "slim/slim" : "^3.9.0",
         "tuupola/branca" : "^0.3.1",
-        "paragonie/sodium_compat": "^v1.5.3"
-    },
-    "require-dev" : {
-        "php" : "^7.1",
-        "phpunit/phpunit" : "^6.4.4"
+        "paragonie/sodium_compat": "v1.5.3"
     },
     "autoload-dev" : {
         "psr-4" : {
             "Tigerwill90\\Tests\\" : "tests"
         }
+    },
+    "require-dev" : {
+        "php" : "^7.1",
+        "phpunit/phpunit" : "^6.4.4"
     }
 }
