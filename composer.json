@@ -11,7 +11,8 @@
     "require": {
         "php" : "^7.1",
         "slim/slim" : "^3.9.0",
-        "tuupola/branca" : "^0.3.1"
+        "tuupola/branca" : "^0.3.1",
+        "paragonie/sodium_compat": "^v1.5.3"
     },
     "require-dev" : {
         "php" : "^7.1",

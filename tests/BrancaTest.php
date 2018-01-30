@@ -10,11 +10,16 @@ namespace Tigerwill90\Tests;
 
 use Branca\Branca;
 
+/**
+ * This test work with paragonie/sodium_compat v1.5.3
+ * but trigger "pack(): 64-bit format codes are not available for 32-bit versions of PHP"
+ * with v1.5.5
+ */
 class BrancaTest extends \PHPUnit_Framework_TestCase {
 
     /** @test */
     public function testBranca() : void {
-        if (PHP_INT_SIZE === 4) {error_log("PHP 32-bits");} else {error_log("PHP 64-bits");}
+        if (PHP_INT_SIZE === 4) {error_log("PHP 32-bit");} else {error_log("PHP 64-bit, test should work");}
         $branca = new Branca("supersecretkeyyoushouldnotcommit");
         $payload = ["name" => "Foo", "size" => 3];
         $token = $branca->encode(json_encode($payload));

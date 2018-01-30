@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+/vendor/
+/report/
+coverage.xml
+composer.lock
+.phplint-cache
+.env
+.gitignore
+.travis.yml
+CHANGELOG.md
+Makefile
+README.md
+composer.json
+phpunit.xml.dist
+src/
+tests/
